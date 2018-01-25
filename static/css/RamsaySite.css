@@ -14,7 +14,7 @@
 	.Menu {
 			background-color:#435d43; 
 			color:#f4efda; 
-			/*font: large serif;*/
+			font: large serif;
             text-align: center;}
 	.Menu a {text-decoration: none; 
 			color: #f4efda;}

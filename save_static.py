@@ -18,12 +18,12 @@ import os
 import csv
 import subprocess
 
-OUTPUT_LOCATION = "/home/mlemmer/Desktop/Documents/Database/flaskproject/export/"
-STATIC_LOCATION = "/home/mlemmer/Desktop/Documents/Database/flaskproject/static"
-STATIC_OUTPUT_LOCATION = "/home/mlemmer/Desktop/Documents/Database/flaskproject/export/"
+OUTPUT_LOCATION = "/home/taylorl/Work/ledger/export/"
+STATIC_LOCATION = "/home/taylorl/Work/ledger/static"
+STATIC_OUTPUT_LOCATION = "/home/taylorl/Work/ledger/export/"
 
 def static_save_page(page_name):
-    page_url = "http://127.0.0.1:5000/" + page_name
+    page_url = "http://127.0.0.1:8000/" + page_name
     r = requests.get(page_url)
     page_directory = OUTPUT_LOCATION + page_name
     page_filename = page_directory + "index.html"
